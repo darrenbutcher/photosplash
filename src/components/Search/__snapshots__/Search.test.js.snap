@@ -1,7 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Search should render properly 1`] = `
-<div>
-  Search
-</div>
+<Styled(Form)
+  onSubmit={[Function]}
+>
+  <FormGroup>
+    <FormInput
+      as={[Function]}
+      control={[Function]}
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <FormButton
+      as={[Function]}
+      control={[Function]}
+    >
+      Search
+    </FormButton>
+  </FormGroup>
+</Styled(Form)>
 `;
