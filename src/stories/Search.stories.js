@@ -5,11 +5,28 @@ import { text } from '@storybook/addon-knobs/react'
 import { Search } from '../components/index'
 import withTests from './withTests'
 
+const requiredProps = {
+  onChange: action('on-change'),
+  onSubmit: action('on-submit'),
+  value: ''
+}
+
 storiesOf('Search', module)
   .addDecorator(withTests('Search'))
   .add('default', () =>
-    <Search />
+    <Search
+      {...requiredProps}
+    />
   )
   .add('with placeholder', () =>
-    <Search />
+    <Search
+      {...requiredProps}
+      placeholder={text('placeholder', 'Search')}
+    />
+  )
+  .add('button text', () =>
+    <Search
+      {...requiredProps}
+      buttonText={text('buttonText', 'Find')}
+    />
   )
