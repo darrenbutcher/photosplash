@@ -7,7 +7,6 @@ describe('Search', () => {
   const requiredProps = {
     onSubmit: jest.fn(),
     onChange: jest.fn(),
-    value: ''
   }
 
   const preventDefault = jest.fn()

@@ -8,7 +8,6 @@ import withTests from './withTests'
 const requiredProps = {
   onChange: action('on-change'),
   onSubmit: action('on-submit'),
-  value: ''
 }
 
 storiesOf('Search', module)

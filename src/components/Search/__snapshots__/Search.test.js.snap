@@ -10,7 +10,6 @@ exports[`Search should render properly 1`] = `
       control={[Function]}
       onChange={[Function]}
       type="text"
-      value=""
     />
     <FormButton
       as={[Function]}

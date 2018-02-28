@@ -36,7 +36,7 @@ Search.propTypes = {
   buttonText: PropTypes.string,
   onSubmit: PropTypes.func.isRequired,
   onChange: PropTypes.func.isRequired,
-  value: PropTypes.string.isRequired,
+  value: PropTypes.string
 }
 
 export default Search
