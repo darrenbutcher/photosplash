@@ -22,7 +22,8 @@
     "test:generate-output": "react-scripts test --env=jsdom --json --outputFile=.jest-test-results.json",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "devDependencies": {
     "@dump247/storybook-state": "^1.2.3",
