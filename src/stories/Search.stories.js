@@ -6,6 +6,7 @@ import { Search } from '../components/index'
 import withTests from './withTests'
 
 storiesOf('Search', module)
+  .addDecorator(withTests('Search'))
   .add('default', () =>
     <Search />
   )
