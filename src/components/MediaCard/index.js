@@ -7,4 +7,20 @@ const MediaCard = (props) => {
   )
 }
 
+MediaCard.propTypes = {
+  image: PropTypes.string.isRequired,
+  body: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.shape(forbidExtraProps({
+      title: PropTypes.string,
+      subtitle: PropTypes.string,
+      description: PropTypes.string,
+      button: PropTypes.shape(forbidExtraProps({
+        text: PropTypes.string.isRequired,
+        onClick: PropTypes.func.isRequired
+      })),
+    })),
+  ]).isRequired,
+}
+
 export default MediaCard
