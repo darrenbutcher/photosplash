@@ -8,7 +8,8 @@ const MediaCard = (props) => {
 }
 
 MediaCard.propTypes = {
-  image: PropTypes.string.isRequired,
+  type: PropTypes.oneOf(['image']),
+  src: PropTypes.string.isRequired,
   body: PropTypes.oneOfType([
     PropTypes.func,
     PropTypes.shape(forbidExtraProps({
@@ -20,7 +21,7 @@ MediaCard.propTypes = {
         onClick: PropTypes.func.isRequired
       })),
     })),
-  ]).isRequired,
+  ]),
 }
 
 export default MediaCard
