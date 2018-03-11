@@ -7,6 +7,10 @@ const MediaCard = (props) => {
   )
 }
 
+MediaCard.defaultProps = {
+  type: 'image'
+}
+
 MediaCard.propTypes = {
   type: PropTypes.oneOf(['image']),
   src: PropTypes.string.isRequired,
