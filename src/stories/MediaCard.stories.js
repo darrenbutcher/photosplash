@@ -50,3 +50,36 @@ storiesOf('MediaCard', module)
       }}
     />
   )
+  storiesOf('MediaCard/Examples', module)
+  .add('Sample', () =>
+    <MediaCard
+      {...requiredProps}
+      body={{
+        ...object('body.title', { title: 'Joe Somebody' }),
+        ...object('body.subtitle', { subtitle: 'This is fun' }),
+        ...object('body.description', {
+          description: 'This is a description of something that should go here.'
+         }),
+        button: {
+          ...object('body.button', { text: 'Like' }),
+          onClick: action('on-click')
+        }
+      }}
+    />
+  )
+  .add('X1.0', () => 
+    <MediaCard
+      {...requiredProps}
+      body={{
+        ...object('body.title', { title: 'Joe Somebody' }),
+        button: {
+          ...object('body.button', { text: 'Save' }),
+          onClick: action('on-click')
+        }
+      }}
+    />
+  )
+
+  // title={text('title', 'Joe Somebody')}
+  // buttonText={text('buttonText', 'Save')}
+  // onButtonClick={action('on-button-click')}
