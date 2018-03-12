@@ -50,7 +50,21 @@ storiesOf('MediaCard', module)
       }}
     />
   )
-  storiesOf('MediaCard/Examples', module)
+  .add('with custom body', () =>
+    <MediaCard
+      src={requiredProps.src}
+      body={() =>
+        <div>
+          <ul>
+            <li>One</li>
+            <li>Two</li>
+          </ul>
+        </div>
+      }
+    />
+  )
+
+storiesOf('MediaCard/Examples', module)
   .add('Sample', () =>
     <MediaCard
       {...requiredProps}
@@ -79,7 +93,3 @@ storiesOf('MediaCard', module)
       }}
     />
   )
-
-  // title={text('title', 'Joe Somebody')}
-  // buttonText={text('buttonText', 'Save')}
-  // onButtonClick={action('on-button-click')}
