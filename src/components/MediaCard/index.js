@@ -26,6 +26,7 @@ const CardButtonWrapper = styled.div`
 const BodySpacer = styled.div`
   height: 19px;
 `
+BodySpacer.displayName = 'BodySpacer'
 
 const MediaCard = (props) => {
   const MEDIA_TYPE = {
