@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`withLoader should render content when isFetching is false 1`] = `
+<App
+  isFetching={false}
+/>
+`;
+
+exports[`withLoader should render loading message when isFetching 1`] = `
+<Dimmer
+  active={true}
+  inverted={true}
+>
+  <Loader
+    inverted={true}
+  />
+</Dimmer>
+`;
