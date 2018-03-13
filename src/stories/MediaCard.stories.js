@@ -3,6 +3,7 @@ import { storiesOf, addDecorator } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { text, object } from '@storybook/addon-knobs/react'
 import MediaCard from '../components/MediaCard'
+import withTests from './withTests'
 
 const requiredProps = {
   type: 'image',
@@ -10,6 +11,7 @@ const requiredProps = {
 }
 
 storiesOf('MediaCard', module)
+  .addDecorator(withTests('MediaCard'))
   .add('default', () =>
     <MediaCard
       src=""
