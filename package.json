@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "airbnb-prop-types": "^2.8.1",
     "bootstrap": "4.0.0",
     "lodash": "^4.17.5",
     "react": "^16.2.0",
@@ -19,11 +20,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "test:generate-output": "react-scripts test --env=jsdom --json --outputFile=.jest-test-results.json",
+    "test:output": "react-scripts test --env=jsdom --json --outputFile=.jest-test-results.json",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public",
-    "deploy-storybook": "storybook-to-ghpages"
+    "build:storybook": "build-storybook -s public",
+    "deploy:storybook": "storybook-to-ghpages"
   },
   "devDependencies": {
     "@dump247/storybook-state": "^1.2.3",
