@@ -69,7 +69,7 @@ const MediaCard = (props) => {
   )
 
   const renderButton = () => (
-    (body.button && body.button.text) ?
+    (body.button && body.button.text && body.button.onClick) ?
     ( 
       <CardButtonWrapper body={body}>
         <CardButton onClick={body.button.onClick}>
