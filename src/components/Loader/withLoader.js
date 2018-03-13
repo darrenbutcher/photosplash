@@ -1,13 +1,16 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { Loader, Dimmer } from 'semantic-ui-react'
 
 const withLoader = (ComposedComponent) => {
-  class Loader extends Component {
+  class LoaderHOC extends Component {
     render() {
       if (this.props.isFetching === true) {
         return (
-          <div>Loading...</div>
+          <Dimmer active inverted>
+            <Loader inverted />
+          </Dimmer>
         )
       }
       return (
@@ -15,7 +18,7 @@ const withLoader = (ComposedComponent) => {
       )
     }
   }
-  return Loader
+  return LoaderHOC
 }
 
 export default withLoader

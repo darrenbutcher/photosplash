@@ -7,7 +7,12 @@ exports[`withLoader should render content when isFetching is false 1`] = `
 `;
 
 exports[`withLoader should render loading message when isFetching 1`] = `
-<div>
-  Loading...
-</div>
+<Dimmer
+  active={true}
+  inverted={true}
+>
+  <Loader
+    inverted={true}
+  />
+</Dimmer>
 `;
